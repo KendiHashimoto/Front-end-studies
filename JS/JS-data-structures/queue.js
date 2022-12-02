@@ -9,7 +9,9 @@ class Queue {
   enqueue(item) {
     this.data.push(item)
     console.log(`${item} chegou na fila!`)
-  }
+  } 
+
+  
 
   // dequeue -> remover o primeiro elemento a entrar na fila
   // shift -> aplicado ao array para retirar o primeiro a entrar na fila
