@@ -5,7 +5,7 @@
 }
 
 .container header {
-  width: 50%;
+  width: 40%;
   margin: 84px 0 24px;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@
 }
 
 .container input {
-  width: 50%;
+  width: 40%;
   padding: 24px;
 
   background: #e6e6e6;
@@ -36,7 +36,7 @@
 }
 
 .container button {
-  width: 50%;
+  width: 40%;
   padding: 24px;
   font-weight: 700;
 
