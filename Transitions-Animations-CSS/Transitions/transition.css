@@ -18,32 +18,31 @@ body {
 
 .boxes-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .box-red,
-.box-green {
+.box-green,
+.box-blue,
+.box-yellow {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  margin-bottom: 10px;
 }
 
 .box-red {
   background-color: red;
-
   /* 1 - property / 2 - duration / 3 - timing / 4 - delay */
-  transition: background-color 1s ease 4s;
+  transition: all 1s ease 1s;
 }
 
 .box-red:hover {
   background-color: yellow;
-
-  transition: background-color 1s ease 4s;
+  transition: all 1s ease 1s;
 }
 
 .box-green {
   background-color: green;
-
   /* 1 - All propertys changes / ... */
   transition: all 1s linear 0s;
 }
@@ -56,6 +55,27 @@ body {
 
   transition: all 1s ease;
 }
+
+.box-blue {
+  background-color: blue;
+  transition: width 1s linear 1s;
+}
+
+.box-blue:hover {
+  width: 200px;
+  transition: width 2s ease-in-out 0s;
+}
+
+.box-yellow {
+  background-color: yellow;
+  transition: opacity 2s linear 1s;
+}
+
+.box-yellow:hover {
+  opacity: 0;
+  transition: opacity 1s linear 0s;
+}
+
 /* * 4 - Timing functions  */
 /* * ease - Início lento, rápido e final lento (este é o padrão) */
 /* * linear - Mesma velocidade do início ao fim */
@@ -78,7 +98,7 @@ p {
   transition-duration: 1s;
 }
 
-body:hover .line {
+.lines-container:hover .line {
   width: 20px;
   background-color: red;
 }
